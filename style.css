@@ -1,18 +1,21 @@
 /* FujiKitchen — shared site styles
-   Palette: darkroom black / safelight amber / film-box cream
+   Palette: Olive / Desert Tan / Caramel (pantry palette, matches "kitchen" branding)
    Type: Archivo (display) · IBM Plex Mono (data/labels) · IBM Plex Sans (body) */
 
 :root {
-  --bg: #121210;
-  --surface: #1a1a16;
-  --surface-2: #201f1a;
-  --amber: #e39b3e;
-  --amber-dim: #c98530;
-  --cream: #ede7d8;
-  --grey: #938e80;
-  --grey-dim: #6b6759;
-  --rule: #322f27;
-  --red: #c4453a;
+  --bg: #e5d1a4;          /* desert tan — page background */
+  --surface: #efe4c7;     /* lighter tan panel */
+  --surface-dark: #2e2712; /* dark card surface, for the recipe card signature element */
+  --rule-dark: #4a3f1f;    /* hairline rule inside dark card */
+  --ink: #2b2410;          /* primary text */
+  --ink-dim: #6b5b3a;      /* secondary / muted text */
+  --ink-faint: #8b7a52;    /* faintest text, disclaimers */
+  --tan-light: #f1e6cc;    /* light text on dark card */
+  --dark-dim: #8c7b4e;     /* muted label text on dark card */
+  --caramel: #ce793a;      /* primary accent */
+  --caramel-hover: #de8f52;
+  --olive: #937a24;        /* secondary accent */
+  --rule: #cdb98b;         /* hairline dividers on tan bg */
   --radius: 3px;
   --max: 1080px;
 }
@@ -29,7 +32,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--cream);
+  color: var(--ink);
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.55;
@@ -38,13 +41,13 @@ body {
 
 img, svg { max-width: 100%; display: block; }
 
-a { color: var(--amber); text-decoration-color: rgba(227,155,62,0.4); text-underline-offset: 3px; }
-a:hover { text-decoration-color: var(--amber); }
+a { color: var(--caramel); text-decoration-color: rgba(206,121,58,0.45); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--caramel); }
 
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--caramel);
   outline-offset: 3px;
 }
 
@@ -53,6 +56,7 @@ h1, h2, h3 {
   font-weight: 900;
   letter-spacing: -0.01em;
   margin: 0;
+  color: var(--ink);
 }
 
 .eyebrow {
@@ -60,7 +64,7 @@ h1, h2, h3 {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--caramel);
 }
 
 .wrap {
@@ -87,12 +91,12 @@ h1, h2, h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 900;
   font-size: 1.05rem;
-  color: var(--cream);
+  color: var(--ink);
   text-decoration: none;
   letter-spacing: -0.01em;
 }
 
-.logo span { color: var(--amber); }
+.logo span { color: var(--caramel); }
 
 .site-nav { display: flex; gap: 28px; }
 
@@ -100,11 +104,11 @@ h1, h2, h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.82rem;
   letter-spacing: 0.04em;
-  color: var(--grey);
+  color: var(--ink-dim);
   text-decoration: none;
 }
 
-.site-nav a:hover, .site-nav a.current { color: var(--amber); }
+.site-nav a:hover, .site-nav a.current { color: var(--caramel); }
 
 /* ---------- Hero ---------- */
 
@@ -123,13 +127,12 @@ h1, h2, h3 {
 .hero h1 {
   font-size: clamp(2.1rem, 4vw, 3.1rem);
   line-height: 1.06;
-  margin-top: 14px;
 }
 
 .hero p.lede {
   margin-top: 22px;
   font-size: 1.08rem;
-  color: var(--grey);
+  color: var(--ink-dim);
   max-width: 46ch;
 }
 
@@ -146,24 +149,43 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-  background: var(--amber);
-  color: #17150f;
+  background: var(--caramel);
+  color: var(--ink);
   font-weight: 600;
 }
-.btn-primary:hover { background: #edb15f; }
+.btn-primary:hover { background: var(--caramel-hover); }
 
 .btn-ghost {
-  color: var(--cream);
+  color: var(--ink);
   border: 1px solid var(--rule);
 }
-.btn-ghost:hover { border-color: var(--grey-dim); }
+.btn-ghost:hover { border-color: var(--olive); }
+
+.compat-note {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--olive);
+}
+
+.compat-note::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--caramel);
+  flex-shrink: 0;
+}
 
 /* ---------- Recipe card (signature element) ---------- */
 
 .recipe-card {
   position: relative;
-  background: var(--surface);
-  border: 1px solid var(--rule);
+  background: var(--surface-dark);
+  border: 1px solid var(--rule-dark);
   border-radius: var(--radius);
   padding: 20px 22px 18px;
   overflow: hidden;
@@ -176,8 +198,8 @@ h1, h2, h3 {
   pointer-events: none;
   background-image: repeating-linear-gradient(
     to bottom,
-    rgba(255,255,255,0.018) 0px,
-    rgba(255,255,255,0.018) 1px,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
     transparent 1px,
     transparent 3px
   );
@@ -188,7 +210,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule-dark);
   padding-bottom: 12px;
   margin-bottom: 4px;
 }
@@ -197,13 +219,13 @@ h1, h2, h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 900;
   font-size: 1.15rem;
-  color: var(--cream);
+  color: var(--tan-light);
 }
 
 .recipe-attr {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.72rem;
-  color: var(--grey-dim);
+  color: var(--dark-dim);
 }
 
 .recipe-rows { position: relative; padding: 4px 0; }
@@ -218,20 +240,18 @@ h1, h2, h3 {
   font-size: 0.82rem;
 }
 
-.recipe-row .label { color: var(--grey); letter-spacing: 0.03em; }
-.recipe-row .value { color: var(--cream); }
+.recipe-row .label { color: var(--dark-dim); letter-spacing: 0.03em; }
+.recipe-row .value { color: var(--tan-light); }
 
 .recipe-highlight {
   position: absolute;
   left: 0; right: 0;
   height: 33px;
-  background: rgba(227,155,62,0.14);
-  border-left: 2px solid var(--amber);
+  background: rgba(206,121,58,0.22);
+  border-left: 2px solid var(--caramel);
   z-index: 1;
   animation: step-rows 5s steps(1, end) infinite;
 }
-
-.recipe-row.hit .value { color: var(--amber); }
 
 @keyframes step-rows {
   0%   { transform: translateY(0); }
@@ -269,19 +289,18 @@ h1, h2, h3 {
 
 .step-num {
   font-family: "IBM Plex Mono", monospace;
-  color: var(--amber-dim);
+  color: var(--olive);
   font-size: 0.85rem;
 }
 
 .step-list h3 {
   font-size: 1.05rem;
   margin-top: 10px;
-  color: var(--cream);
 }
 
 .step-list p {
   margin-top: 10px;
-  color: var(--grey);
+  color: var(--ink-dim);
   font-size: 0.95rem;
 }
 
@@ -306,7 +325,6 @@ h1, h2, h3 {
 
 .feature-card h3 {
   font-size: 1rem;
-  color: var(--cream);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -314,7 +332,7 @@ h1, h2, h3 {
 
 .feature-card p {
   margin-top: 10px;
-  color: var(--grey);
+  color: var(--ink-dim);
   font-size: 0.95rem;
 }
 
@@ -322,7 +340,7 @@ h1, h2, h3 {
 
 .page-head { padding: 60px 0 20px; }
 .page-head h1 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); margin-top: 12px; }
-.page-head p { margin-top: 16px; color: var(--grey); max-width: 60ch; font-size: 1.02rem; }
+.page-head p { margin-top: 16px; color: var(--ink-dim); max-width: 60ch; font-size: 1.02rem; }
 
 .faq { padding: 20px 0 60px; }
 
@@ -337,7 +355,7 @@ h1, h2, h3 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--cream);
+  color: var(--ink);
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -349,7 +367,7 @@ h1, h2, h3 {
 .faq-item summary::after {
   content: "+";
   font-family: "IBM Plex Mono", monospace;
-  color: var(--amber);
+  color: var(--caramel);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
@@ -358,7 +376,7 @@ h1, h2, h3 {
 
 .faq-item p {
   margin: 0 4px 22px;
-  color: var(--grey);
+  color: var(--ink-dim);
   max-width: 68ch;
   font-size: 0.97rem;
 }
@@ -371,8 +389,8 @@ h1, h2, h3 {
   margin: 8px 0 60px;
 }
 
-.contact-block h2 { font-size: 1.2rem; color: var(--cream); }
-.contact-block p { color: var(--grey); margin-top: 12px; font-size: 0.97rem; }
+.contact-block h2 { font-size: 1.2rem; }
+.contact-block p { color: var(--ink-dim); margin-top: 12px; font-size: 0.97rem; }
 
 .contact-email {
   display: inline-block;
@@ -386,7 +404,7 @@ h1, h2, h3 {
   padding-left: 0;
   list-style: none;
   font-size: 0.92rem;
-  color: var(--grey);
+  color: var(--ink-dim);
 }
 
 .checklist li {
@@ -399,7 +417,7 @@ h1, h2, h3 {
   content: "–";
   position: absolute;
   left: 0;
-  color: var(--amber-dim);
+  color: var(--olive);
 }
 
 /* ---------- Footer ---------- */
@@ -421,14 +439,14 @@ h1, h2, h3 {
 .footer-links a {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem;
-  color: var(--grey);
+  color: var(--ink-dim);
   text-decoration: none;
 }
 
-.footer-links a:hover { color: var(--amber); }
+.footer-links a:hover { color: var(--caramel); }
 
 .disclaimer {
-  color: var(--grey-dim);
+  color: var(--ink-faint);
   font-size: 0.78rem;
   max-width: 640px;
   line-height: 1.6;
