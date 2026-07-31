@@ -3,7 +3,7 @@
    Type: Archivo (display) · IBM Plex Mono (data/labels) · IBM Plex Sans (body) */
 
 :root {
-  --bg: #e5d1a4;          /* desert tan — page background */
+  --bg: #e7dfd1;          /* desert tan — page background */
   --surface: #efe4c7;     /* lighter tan panel */
   --surface-dark: #2e2712; /* dark card surface, for the recipe card signature element */
   --rule-dark: #4a3f1f;    /* hairline rule inside dark card */
