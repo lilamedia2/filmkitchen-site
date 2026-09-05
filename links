@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilmKitchen — Download Links</title>
+<meta name="description" content="Download FilmKitchen from the App Store in your country.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%233f6e82'/%3E%3Ccircle cx='12' cy='12.5' r='6.2' stroke='%23fdf8ec' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='12' cy='12.5' r='2.6' fill='%23fdf8ec'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6efe1;
+    --bg-raised: #fffcf5;
+    --bg-alt: #eee2c9;
+    --ink: #2b241d;
+    --ink-soft: #6f6350;
+    --ink-faint: #a4967c;
+    --line: #ddccab;
+    --line-soft: #e9dcbe;
+    --accent: #3f6e82;
+    --accent-deep: #2a4e5e;
+    --accent-tint: #dde9ec;
+    --gold: #a9791f;
+    --gold-tint: #f1e2bd;
+    --shadow: 0 1px 2px rgba(43, 36, 29, 0.06), 0 6px 20px -8px rgba(43, 36, 29, 0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1815;
+      --bg-raised: #242019;
+      --bg-alt: #2c271f;
+      --ink: #f1e9d8;
+      --ink-soft: #b5a68b;
+      --ink-faint: #7d715c;
+      --line: #3c3527;
+      --line-soft: #332d22;
+      --accent: #8fb8c9;
+      --accent-deep: #b7d6e1;
+      --accent-tint: #26383f;
+      --gold: #dcb35a;
+      --gold-tint: #3a2f18;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -10px rgba(0, 0, 0, 0.55);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #1b1815;
+    --bg-raised: #242019;
+    --bg-alt: #2c271f;
+    --ink: #f1e9d8;
+    --ink-soft: #b5a68b;
+    --ink-faint: #7d715c;
+    --line: #3c3527;
+    --line-soft: #332d22;
+    --accent: #8fb8c9;
+    --accent-deep: #b7d6e1;
+    --accent-tint: #26383f;
+    --gold: #dcb35a;
+    --gold-tint: #3a2f18;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -10px rgba(0, 0, 0, 0.55);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 24px 96px;
+  }
+
+  .crumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  .crumb:hover { color: var(--accent-deep); }
+  .crumb svg { width: 13px; height: 13px; }
+
+  header.top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .badge {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(155deg, var(--accent) 0%, var(--accent-deep) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+  .badge svg { width: 30px; height: 30px; }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--gold);
+    margin: 0 0 6px;
+  }
+
+  h1 {
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 38px);
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .lede {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 60ch;
+  }
+
+  .master-card {
+    margin-top: 24px;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .master-meta { display: flex; flex-direction: column; gap: 4px; }
+  .master-meta .k {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+  }
+  .master-meta .v {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+
+  .link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-tint);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 8px 8px 16px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--accent-deep);
+  }
+  .link-pill a { color: inherit; text-decoration: none; }
+  .link-pill a:hover { text-decoration: underline; }
+
+  button.copy {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    flex: none;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  }
+  button.copy:hover { color: var(--accent-deep); border-color: var(--accent); }
+  button.copy:active { transform: scale(0.92); }
+  button.copy svg { width: 15px; height: 15px; }
+  button.copy.copied { color: var(--gold); border-color: var(--gold); }
+
+  .search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg);
+    padding: 20px 0 14px;
+    margin-top: 8px;
+  }
+  .search-bar::after {
+    content: "";
+    position: absolute;
+    left: -24px; right: -24px; bottom: 0;
+    height: 14px;
+    background: linear-gradient(var(--bg), transparent);
+    pointer-events: none;
+    transform: translateY(100%);
+  }
+
+  .search-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 14px;
+    box-shadow: var(--shadow);
+  }
+  .search-row svg { flex: none; width: 17px; height: 17px; color: var(--ink-faint); }
+  .search-row input {
+    all: unset;
+    flex: 1;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .search-row input::placeholder { color: var(--ink-faint); }
+  .count {
+    flex: none;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+
+  .region {
+    margin-top: 30px;
+  }
+  .region h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0 2px;
+    color: var(--ink);
+  }
+  .region .region-count {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    color: var(--ink-faint);
+    margin: 0 0 10px;
+  }
+
+  .rows {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg-raised);
+    box-shadow: var(--shadow);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 34px 1fr auto 34px;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px;
+    border-top: 1px solid var(--line-soft);
+    text-decoration: none;
+    color: inherit;
+  }
+  .row:first-child { border-top: none; }
+  .row:hover { background: var(--bg-alt); }
+
+  .code {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--gold);
+    background: var(--gold-tint);
+    border-radius: 6px;
+    padding: 3px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .name {
+    font-size: 14.5px;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .url {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    display: none;
+  }
+  @media (min-width: 640px) {
+    .url { display: block; }
+    .row { grid-template-columns: 34px 1fr auto 34px; }
+  }
+
+  .open-icon { color: var(--ink-faint); display: flex; }
+  .open-icon svg { width: 14px; height: 14px; }
+  .row:hover .open-icon { color: var(--accent-deep); }
+
+  .no-results {
+    display: none;
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--ink-faint);
+    font-size: 14px;
+  }
+
+  footer.note {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+  footer.note strong { color: var(--ink-soft); }
+  footer.note a { color: var(--accent-deep); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    FilmKitchen
+  </a>
+
+  <header class="top">
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12.5" r="6.2" stroke="#fdf8ec" stroke-width="1.6"/>
+        <circle cx="12" cy="12.5" r="2.6" fill="#fdf8ec"/>
+        <path d="M8 6.3h1.8L10.6 4.6h2.8l0.8 1.7H16" stroke="#fdf8ec" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow">FilmKitchen &middot; distribution</p>
+      <h1>App Store storefront links</h1>
+      <p class="lede">Direct download links for FilmKitchen, one per country where it's currently listed for sale. Search by country or code, then copy or open a link directly.</p>
+    </div>
+  </header>
+
+  <div class="master-card">
+    <div class="master-meta">
+      <span class="k">Apple ID</span>
+      <span class="v">id6785587484</span>
+    </div>
+    <div class="link-pill">
+      <a href="https://apps.apple.com/us/app/filmkitchen/id6785587484" target="_blank" rel="noopener">apps.apple.com/us/app/filmkitchen/id6785587484</a>
+      <button class="copy" data-copy="https://apps.apple.com/us/app/filmkitchen/id6785587484" aria-label="Copy US link" title="Copy link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <div class="search-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="text" placeholder="Search country or code, e.g. &ldquo;United Kingdom&rdquo; or &ldquo;gb&rdquo;" autocomplete="off">
+      <span class="count" id="count">91 storefronts</span>
+    </div>
+  </div>
+
+  <div id="regions"></div>
+  <p class="no-results" id="noResults">No storefronts match that search.</p>
+
+  <footer class="note">
+    <strong>Keeping this in sync:</strong> this list mirrors FilmKitchen's live Pricing and Availability settings in App Store Connect (91 territories) as of when this page was last updated, not Apple's full catalog of storefronts. If you add or remove countries there, come back and update this list, it won't sync automatically. Notably absent right now: every EU member state, most of the Middle East, and all but one African market.
+  </footer>
+</div>
+
+<script>
+  const APPLE_ID = "6785587484";
+  const SLUG = "filmkitchen";
+
+  // Pulled directly from FilmKitchen's live Pricing and Availability list in App Store Connect.
+  // Update this array (and the "last synced" date in the footer) whenever that list changes.
+  const DATA = [
+    ["al","Albania","Europe"],["ai","Anguilla","Americas"],["ag","Antigua and Barbuda","Americas"],
+    ["ar","Argentina","Americas"],["au","Australia","APAC"],["bs","Bahamas","Americas"],
+    ["bb","Barbados","Americas"],["by","Belarus","Europe"],["bz","Belize","Americas"],
+    ["bm","Bermuda","Americas"],["bt","Bhutan","APAC"],["bo","Bolivia","Americas"],
+    ["ba","Bosnia and Herzegovina","Europe"],["br","Brazil","Americas"],
+    ["vg","British Virgin Islands","Americas"],["bn","Brunei","APAC"],["kh","Cambodia","APAC"],
+    ["ca","Canada","Americas"],["ky","Cayman Islands","Americas"],["cl","Chile","Americas"],
+    ["co","Colombia","Americas"],["cr","Costa Rica","Americas"],["dm","Dominica","Americas"],
+    ["do","Dominican Republic","Americas"],["ec","Ecuador","Americas"],["sv","El Salvador","Americas"],
+    ["fj","Fiji","APAC"],["gd","Grenada","Americas"],["gt","Guatemala","Americas"],
+    ["gy","Guyana","Americas"],["hn","Honduras","Americas"],["hk","Hong Kong","APAC"],
+    ["is","Iceland","Europe"],["id","Indonesia","APAC"],["jm","Jamaica","Americas"],["jp","Japan","APAC"],
+    ["kz","Kazakhstan","APAC"],["kr","Korea, Republic of","APAC"],["xk","Kosovo","Europe"],
+    ["kg","Kyrgyzstan","APAC"],["la","Laos","APAC"],["mo","Macau","APAC"],["my","Malaysia","APAC"],
+    ["mv","Maldives","APAC"],["mx","Mexico","Americas"],["fm","Micronesia","APAC"],
+    ["md","Moldova","Europe"],["mn","Mongolia","APAC"],["me","Montenegro","Europe"],
+    ["ms","Montserrat","Americas"],["mm","Myanmar","APAC"],["nr","Nauru","APAC"],["np","Nepal","APAC"],
+    ["nz","New Zealand","APAC"],["ni","Nicaragua","Americas"],["mk","North Macedonia","Europe"],
+    ["no","Norway","Europe"],["pk","Pakistan","APAC"],["pw","Palau","APAC"],["pa","Panama","Americas"],
+    ["pg","Papua New Guinea","APAC"],["py","Paraguay","Americas"],["pe","Peru","Americas"],
+    ["ph","Philippines","APAC"],["ru","Russia","Europe"],["rs","Serbia","Europe"],
+    ["sg","Singapore","APAC"],["sb","Solomon Islands","APAC"],["za","South Africa","Africa"],
+    ["lk","Sri Lanka","APAC"],["kn","St. Kitts and Nevis","Americas"],["lc","St. Lucia","Americas"],
+    ["vc","St. Vincent and the Grenadines","Americas"],["sr","Suriname","Americas"],
+    ["ch","Switzerland","Europe"],["tw","Taiwan","APAC"],["tj","Tajikistan","APAC"],
+    ["th","Thailand","APAC"],["to","Tonga","APAC"],["tt","Trinidad and Tobago","Americas"],
+    ["tr","Türkiye","Europe"],["tm","Turkmenistan","APAC"],["tc","Turks and Caicos Islands","Americas"],
+    ["ua","Ukraine","Europe"],["gb","United Kingdom","Europe"],["us","United States","Americas"],
+    ["uy","Uruguay","Americas"],["uz","Uzbekistan","APAC"],["vu","Vanuatu","APAC"],
+    ["ve","Venezuela","Americas"],["vn","Vietnam","APAC"]
+  ];
+
+  const REGION_LABEL = { Americas: "Americas", Europe: "Europe", Africa: "Africa", APAC: "Asia Pacific" };
+  const REGION_ORDER = ["Americas", "Europe", "APAC", "Africa"];
+
+  function urlFor(code) {
+    return `https://apps.apple.com/${code}/app/${SLUG}/id${APPLE_ID}`;
+  }
+
+  const regionsEl = document.getElementById("regions");
+  const grouped = {};
+  REGION_ORDER.forEach(r => grouped[r] = []);
+  DATA.forEach(([code, name, region]) => grouped[region].push({ code, name, region }));
+
+  REGION_ORDER.forEach(region => {
+    const items = grouped[region];
+    const section = document.createElement("div");
+    section.className = "region";
+    section.dataset.region = region;
+
+    const h2 = document.createElement("h2");
+    h2.textContent = REGION_LABEL[region];
+    const rc = document.createElement("p");
+    rc.className = "region-count";
+    rc.textContent = `${items.length} storefronts`;
+    section.appendChild(h2);
+    section.appendChild(rc);
+
+    const rows = document.createElement("div");
+    rows.className = "rows";
+
+    items.sort((a, b) => a.name.localeCompare(b.name)).forEach(({ code, name }) => {
+      const url = urlFor(code);
+      const row = document.createElement("a");
+      row.className = "row";
+      row.href = url;
+      row.target = "_blank";
+      row.rel = "noopener";
+      row.dataset.search = (name + " " + code).toLowerCase();
+
+      row.innerHTML = `
+        <span class="code">${code}</span>
+        <span class="name">${name}</span>
+        <span class="url">apps.apple.com/${code}/app/${SLUG}/id${APPLE_ID}</span>
+        <span class="open-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </span>
+      `;
+      rows.appendChild(row);
+    });
+
+    section.appendChild(rows);
+    regionsEl.appendChild(section);
+  });
+
+  const searchInput = document.getElementById("search");
+  const countEl = document.getElementById("count");
+  const noResults = document.getElementById("noResults");
+  const allRows = Array.from(document.querySelectorAll(".row"));
+  const allSections = Array.from(document.querySelectorAll(".region"));
+
+  function applyFilter() {
+    const q = searchInput.value.trim().toLowerCase();
+    let visible = 0;
+    allSections.forEach(section => {
+      let sectionVisible = 0;
+      section.querySelectorAll(".row").forEach(row => {
+        const match = !q || row.dataset.search.includes(q);
+        row.style.display = match ? "" : "none";
+        if (match) { sectionVisible++; visible++; }
+      });
+      section.style.display = sectionVisible ? "" : "none";
+    });
+    countEl.textContent = q ? `${visible} of ${allRows.length}` : `${allRows.length} storefronts`;
+    noResults.style.display = visible ? "none" : "block";
+  }
+
+  searchInput.addEventListener("input", applyFilter);
+
+  document.querySelectorAll("button.copy").forEach(btn => {
+    btn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const text = btn.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.classList.add("copied");
+        const original = btn.innerHTML;
+        btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
+        setTimeout(() => { btn.innerHTML = original; btn.classList.remove("copied"); }, 1200);
+      } catch (err) { /* clipboard unavailable, silently ignore */ }
+    });
+  });
+</script>
+</body>
+</html>
